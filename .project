@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>HCCBDEMO</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>classes</name>
+			<type>2</type>
+			<location>E:/Kronos/jboss/wfc/deployments/wfc.ear/wfc.war/WEB-INF/classes</location>
+		</link>
+		<link>
+			<name>jsp_output</name>
+			<type>2</type>
+			<location>E:/Kronos/jboss/wfc/deployments/wfc.ear/wfc.war/applications/cms/html/jsp</location>
+		</link>
+		<link>
+			<name>properties_output</name>
+			<type>2</type>
+			<location>E:/Kronos/jboss/wfc/deployments/wfc.ear/wfc.war/applications/cms/properties</location>
+		</link>
+	</linkedResources>
+</projectDescription>

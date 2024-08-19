@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+    "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+
+<definition name = "cms-import-view-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.principal.employer.config.detail" />
+           <put name = "action-path" type = "string" value = "/uploadform" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/importWorkspace.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name="enctype" type="string" value="multipart/form-data" />
+  </definition>
+
+<definition name = "cms-safety-training" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.safety.config.detail" />
+           <put name = "action-path" type = "string" value = "/safetyTraining" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/safetyTraining.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-safety-training-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-safety-training-title-bar" />
+</definition>
+
+<definition name = "cms-safety-workmen-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.safety.config.list.detail" />
+           <put name = "action-path" type = "string" value = "/safetyWorkmenList" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/safetyWorkmenList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-safety-training-workmen-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-safety-training-workmen-title-bar" />
+</definition>
+<definition name = "cms-safety-violation" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.safety.violation.detail" />
+           <put name = "action-path" type = "string" value = "/safetyViolation" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/safetyViolation.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-safety-violation-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-safety-violation-title-bar" />
+</definition>
+
+<definition name = "cms-safety-violation-workmen-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.safety.violation.config.list.detail" />
+           <put name = "action-path" type = "string" value = "/safetyViolationWorkmenList" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/safetyViolationWorkmenList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-safety-training-workmen-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-safety-training-workmen-title-bar" />
+</definition>
+
+<definition name = "cms-health-information" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.health.information.detail" />
+           <put name = "action-path" type = "string" value = "/healthInformation" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/healthInformation.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-health-information-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-health-information-title-bar" />
+</definition>
+<definition name = "cms-health-information-workmen-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.health.config.list.detail" />
+           <put name = "action-path" type = "string" value = "/healthInformationWorkmenList" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/healthInformationWorkmenList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "cms-health-information-workmen-action-bar" />
+  	   <put name="title-bar" type="definition" value="cms-health-information-workmen-title-bar" />
+</definition>
+<definition name = "cms-principal-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.principal.employer.config.detail" />
+           <put name = "action-path" type = "string" value = "/show" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/principalEmployer.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "detail-action-bar" />
+  	   <put name="title-bar" type="definition" value="principal-employer-detail-title-bar" />
+
+  </definition>
+   <definition name = "cms-lrBulkSched-list-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.bulk.schedule" />
+             <put name = "action-path" type = "string" value = "/lrbulkSched" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/LRBulkSchedule.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "bulk-sched-action-bar" />
+    	   <put name="title-bar" type="definition" value="bulk-sched-title-bar" />
+  
+  </definition>
+
+<definition name = "cms-principal-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.principal.employer.config.list" />
+           <put name = "action-path" type = "string" value = "/list" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/principalEmployerList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "list-action-bar" />
+  	   <put name="title-bar" type="definition" value="principal-employer-list-title-bar" />
+  </definition>
+<definition name = "cms-department-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.department.config.detail" />
+           <put name = "action-path" type = "string" value = "/department" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/department.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "department-detail-action-bar" />
+  	   <put name="title-bar" type="definition" value="department-title-bar" />
+  </definition>
+  
+  <definition name = "cms-user-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.department.user.detail" />
+             <put name = "action-path" type = "string" value = "/departmentUser" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/departmentUser.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "department-user-action-bar" />
+    	   <put name="title-bar" type="definition" value="department-user-title-bar" />
+  </definition>
+  
+<definition name = "cms-department-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.department.config.list" />
+           <put name = "action-path" type = "string" value = "/dlist" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/departmentList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "department-list-action-bar" />
+  	   <put name="title-bar" type="definition" value="department-list-title-bar" />
+  </definition>
+  <definition name = "cms-cw-list-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.workmen.config.wlist" />
+             <put name = "action-path" type = "string" value = "/contractWList" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/contractWList.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "contract-workmen-list-action-bar" />
+    	   <put name="title-bar" type="definition" value="contract-workmen-list-title-bar" />
+    </definition>
+
+<definition name = "cms-workmen-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.workmen.config.list" />
+           <put name = "action-path" type = "string" value = "/workmenList" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/workmenList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "workmen-list-action-bar" />
+  	   <put name="title-bar" type="definition" value="workmen-list-title-bar" />
+  </definition>
+  <definition name = "cms-workmen-detail-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.workmen.config.detail" />
+             <put name = "action-path" type = "string" value = "/workmenDetail" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/workmenDetail.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "workmen-detail-action-bar" />
+    	   <put name="title-bar" type="definition" value="workmen-detail-title-bar" />
+  	   <put name="enctype" type="string" value="multipart/form-data" />
+    </definition>
+  <definition name = "cms-terminate-workmen-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.terminate.workmen.config.detail" />
+             <put name = "action-path" type = "string" value = "/terminateWorkmenDetail" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/terminatedWorkmenDetail.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "terminate-workmen-detail-action-bar" />
+    	   <put name="title-bar" type="definition" value="workmen-detail-title-bar" />
+  	   <put name="enctype" type="string" value="multipart/form-data" />
+    </definition>
+<definition name = "cms-workorder-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.workorder.config.list" />
+           <put name = "action-path" type = "string" value = "/workorderList" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/workorderList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "workorder-list-action-bar" />
+  	   <put name="title-bar" type="definition" value="workorder-list-title-bar" />
+  </definition>
+  <definition name = "cms-workorder-application" extends = "basic-workspace">
+    	<put name="workspace-name" type="string" value="cms.app.name.workorder.config.detail" />
+             <put name = "action-path" type = "string" value = "/workorder" />
+    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/workorder.jsp" />
+    	   <put name = "resources" type = "string" value = "" />
+    	   <put name = "action-bar" type = "definition" value = "workorder-action-bar" />
+    	   <put name="title-bar" type="definition" value="workorder-title-bar" />
+    </definition>
+    <definition name = "cms-minimum-wage-list-application" extends = "basic-workspace">
+        	   <put name="workspace-name" type="string" value="cms.app.name.minimumwage.config.list" />
+               <put name = "action-path" type = "string" value = "/minimumwagelist" />
+        	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/minimumwagelist.jsp" />
+        	   <put name = "resources" type = "string" value = "" />
+        	   <put name = "action-bar" type = "definition" value = "minimumwagelist-action-bar" />
+        	   <put name="title-bar" type="definition" value="minimum-wage-list-title-bar" />
+      </definition>
+     <definition name = "cms-forward-schedule" extends = "basic-workspace">
+        	   <put name="workspace-name" type="string" value="cms-forward-schedule" />
+               <put name = "action-path" type = "string" value = "/laborScheduleEditor" />
+        	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/requestSchedule.jsp" />
+        	   <put name = "resources" type = "string" value = "" />
+        	   <put name = "action-bar" type = "definition" value = "" />
+        	   <put name="title-bar" type="definition" value="" />
+      </definition>
+      
+    <definition name = "cms-minimum-wage-application" extends = "basic-workspace">
+        	   <put name="workspace-name" type="string" value="cms.app.name.minimumwage.config" />
+               <put name = "action-path" type = "string" value = "/minimumwage" />
+        	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/minimumwage.jsp" />
+        	   <put name = "resources" type = "string" value = "" />
+        	   <put name = "action-bar" type = "definition" value = "minimumwage-action-bar" />
+        	   <put name="title-bar" type="definition" value="minimum-wage-title-bar" />
+      </definition>
+      
+      
+       <definition name = "cms-laborreq-list-application" extends = "basic-workspace">
+        	   <put name="workspace-name" type="string" value="cms.app.name.laborreq.config.list" />
+               		<put name = "action-path" type = "string" value = "/laborreqList" />
+        	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/laborreqList.jsp" />
+        	   <put name = "resources" type = "string" value = "" />
+        	   <put name = "action-bar" type = "definition" value = "laborreqList-action-bar" />
+        	   <put name="title-bar" type="definition" value="laborreqList-title-bar" />
+      </definition>
+      
+       <definition name = "cms-viewlaborreq-application" extends = "basic-workspace">
+                    	   <put name="workspace-name" type="string" value="cms.app.name.viewlaborreq.config.list" />
+                         <put name = "action-path" type = "string" value = "/lrView" />
+                    	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/viewlaborreq.jsp" />
+                    	   <put name = "resources" type = "string" value = "" />
+                    	   <put name = "action-bar" type = "definition" value = "view-laborreq-action-bar" />
+                    	   <put name="title-bar" type="definition" value="view-laborreq-title-bar" />
+            </definition>
+            <definition name = "cms-viewlaborreqhist-application" extends = "basic-workspace">
+	                        	   <put name="workspace-name" type="string" value="cms.app.name.viewlaborreqhistory.config.list" />
+	                             <put name = "action-path" type = "string" value = "/lrViewHistory" />
+	                        	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/viewLRHistory.jsp" />
+	                        	   <put name = "resources" type = "string" value = "" />
+	                        	   <put name = "action-bar" type = "definition" value = "view-laborreqhistory-action-bar" />
+	                        	   <put name="title-bar" type="definition" value="view-laborreqhistory-title-bar" />
+            </definition>
+      <definition name = "cms-laborreq-application" extends = "basic-workspace">
+              	   <put name="workspace-name" type="string" value="cms.app.name.laborreq.config.list" />
+                   <put name = "action-path" type = "string" value = "/laborreq" />
+              	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/laborreq.jsp" />
+              	   <put name = "resources" type = "string" value = "" />
+              	   <put name = "action-bar" type = "definition" value = "laborreq-action-bar" />
+              	   <put name="title-bar" type="definition" value="laborreq-title-bar" />
+            </definition>
+                 <definition name = "cms-laborreq-schedule-application" extends = "basic-workspace">
+	                  	   <put name="workspace-name" type="string" value="cms.app.name.laborreq.sched.config" />
+	                       <put name = "action-path" type = "string" value = "/laborreqSchedule" />
+	                  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/laborreqSchedule.jsp" />
+	                  	   <put name = "resources" type = "string" value = "" />
+	                  	   <put name = "action-bar" type = "definition" value = "laborreqSchedule-action-bar" />
+	                  	   <put name="title-bar" type="definition" value="laborreqSchedule-title-bar" />
+            </definition>
+            <definition name = "cms-laborreqbulk-application" extends = "basic-workspace">
+	                  	   <put name="workspace-name" type="string" value="cms.app.name.laborreqbulk.config.list" />
+	                       <put name = "action-path" type = "string" value = "/laborreqbulk" />
+	                  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/LRBulk.jsp" />
+	                  	   <put name = "resources" type = "string" value = "" />
+	                  	   <put name = "action-bar" type = "definition" value = "laborreqbulk-action-bar" />
+	                  	   <put name="title-bar" type="definition" value="laborreqbulk-title-bar" />
+	                </definition>
+            <definition name = "cms-laborreq-timecard-application" extends = "basic-workspace">
+  	                  	   <put name="workspace-name" type="string" value="cms.app.name.laborreq.timecard.config" />
+  	                       <put name = "action-path" type = "string" value = "/laborreqTimecard" />
+  	                  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/laborreqTimecard.jsp" />
+  	                  	   <put name = "resources" type = "string" value = "" />
+  	                  	   <put name = "action-bar" type = "definition" value = "laborreqTimecard-action-bar" />
+  	                  	   <put name="title-bar" type="definition" value="laborreqTimecard-title-bar" />
+            </definition>
+            
+            
+           <definition name="cms-safety-training-action-bar" extends="action-bar">
+	              <put name="app-menu" type="definition" value="cms-safety-training-menu" />
+	   </definition>
+	            <definition name="cms-safety-training-workmen-action-bar" extends="action-bar">
+	   	              <put name="app-menu" type="definition" value="cms-safety-training-workmen-menu" />
+	   	   </definition>
+
+	   
+           <definition name="cms-safety-violation-action-bar" extends="action-bar">
+	              <put name="app-menu" type="definition" value="cms-safety-violation-menu" />
+	   </definition>
+
+	            <definition name="cms-safety-violation-workmen-action-bar" extends="action-bar">
+	   	              <put name="app-menu" type="definition" value="cms-safety-violation-workmen-menu" />
+	   	   </definition>
+
+           <definition name="cms-health-information-action-bar" extends="action-bar">
+	              <put name="app-menu" type="definition" value="cms-health-information-menu" />
+	   </definition>
+
+	            <definition name="cms-health-information-workmen-action-bar" extends="action-bar">
+	   	              <put name="app-menu" type="definition" value="cms-health-information-workmen-menu" />
+	   	   </definition>
+
+     <definition name="laborreqbulk-action-bar" extends="action-bar">
+          <put name="app-menu" type="definition" value="laborreqbulk-menu" />
+  </definition>
+      <definition name="bulk-sched-action-bar" extends="action-bar">
+            <put name="app-menu" type="definition" value="bulk-sched-menu" />
+  </definition>
+ 
+    <definition name="laborreqSchedule-action-bar" extends="action-bar">
+	    <put name="app-menu" type="definition" value="laborreqSchedule-menu" />
+    </definition>
+        <definition name="laborreqTimecard-action-bar" extends="action-bar">
+    	    <put name="app-menu" type="definition" value="laborreqTimecard-menu" />
+        </definition>
+
+
+<definition name="view-laborreq-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="viewlaborreq-menu" />
+</definition>
+
+<definition name="view-laborreqhistory-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="viewlaborreqhistory-menu" />
+</definition>
+
+<definition name="laborreq-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="laborreq-menu" />
+</definition>
+
+<definition name="laborreqList-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="laborreqList-menu" />
+</definition>
+  
+<definition name="minimumwage-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="minimumwage-menu" />
+</definition>
+
+<definition name="workorder-list-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="workorder-list-menu" />
+</definition>
+<definition name="workorder-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="workorder-menu" />
+</definition>
+
+<definition name="contract-workmen-list-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="contract-workmen-list-menu" />
+</definition>
+<definition name="minimumwagelist-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="minimumwage-list-menu" />
+</definition>
+
+
+<definition name="workmen-list-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="workmen-list-menu" />
+</definition>
+<definition name="workmen-detail-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="workmen-detail-menu" />
+</definition>
+<definition name="terminate-workmen-detail-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="terminate-workmen-detail-menu" />
+</definition>
+
+<definition name="list-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="list-menu" />
+</definition>
+<definition name="detail-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="detail-menu" />
+</definition>
+
+<definition name="department-list-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="department-list-menu" />
+</definition>
+<definition name="department-detail-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="department-detail-menu" />
+</definition>
+<definition name="department-user-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="department-user-menu" />
+</definition>
+
+<definition name="viewlaborreq-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.laborreq.return" icon="" value="" /> 
+            </putList>
+</definition>
+
+<definition name="viewlaborreqhistory-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.laborreq.view.lr" icon="" value="" /> 
+            	<item link="cms.action.lrlist.delete" icon="" value="return confirmDeleteWebConfigs()" /> 
+            </putList>
+</definition>
+
+
+<definition name="cms-safety-training-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.safety.refresh" icon="" value="" /> 
+		<item link="cms.action.safety.save" icon="" value="" /> 
+                <item link="cms.action.safety.return" icon="" value="" />
+            </putList>
+</definition>
+<definition name="cms-safety-training-workmen-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.refresh" icon="" value="" /> 
+		<item link="cms.action.edit" icon="" value="" /> 
+            </putList>
+</definition>
+
+<definition name="cms-safety-violation-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.safety.refresh" icon="" value="" /> 
+		<item link="cms.action.safety.save" icon="" value="" /> 
+                <item link="cms.action.safety.return" icon="" value="" />
+            </putList>
+</definition>
+<definition name="cms-safety-violation-workmen-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.refresh" icon="" value="" /> 
+		<item link="cms.action.edit" icon="" value="" /> 
+            </putList>
+</definition>
+
+<definition name="cms-health-information-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.health.refresh" icon="" value="" /> 
+		<item link="cms.action.health.save" icon="" value="" /> 
+                <item link="cms.action.health.return" icon="" value="" />
+            </putList>
+</definition>
+
+<definition name="cms-health-information-workmen-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.refresh" icon="" value="" /> 
+		<item link="cms.action.edit" icon="" value="" /> 
+            </putList>
+</definition>
+
+<definition name="laborreqTimecard-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.timecard.refresh" icon="" value="" /> 
+                <item link="cms.action.timecard.approve" icon="" value="" />
+                 <item link="cms.action.timecard.approve.overtime" icon="" value="" />
+                <item link="cms.action.timecard.resolve.exception" icon="" value="" />
+            </putList>
+</definition>
+
+<definition name="bulk-sched-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.laborreq.refresh" icon="" value="" /> 
+                <item link="cms.action.laborreq.schedule" icon="" value="" />
+            </putList>
+</definition>
+
+<definition name="laborreqbulk-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.laborreq.refresh" icon="" value="" /> 
+                <item link="cms.action.laborreq.remove.approval" icon="" value="" />
+                <item link="cms.action.laborreq.approval" icon="" value="" />
+                <item link="cms.action.laborreq.view.lr" icon="" value="" /> 
+            </putList>
+</definition>
+
+<definition name="laborreqList-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.lrlist.new" icon="" value="" /> 
+                <item link="cms.action.lrlist.view" icon="" value="" />
+                <item link="cms.action.lrlist.delete" icon="" value="return confirmDeleteWebConfigs()" />
+                <item link="cms.action.lrlist.return" icon="" value="" />
+                
+            </putList>
+</definition>
+<definition name="laborreq-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.laborreq.refresh" icon="" value="" /> 
+                <item link="cms.action.laborreq.save" icon="" value="" /> 
+                <item link="cms.action.laborreq.return" icon="" value="" />
+                
+            </putList>
+</definition>
+<definition name="laborreqSchedule-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.refresh" icon="" value="" />
+            	<item link="cms.action.save.schedule" icon="" value="" /> 
+                <!-- <item link="cms.action.go.to.schedule" icon="" value="" /> -->
+                <item link="cms.action.remove" icon="" value="" /> 
+                <item link="cms.action.return" icon="" value="" /> 
+           </putList>
+</definition>
+
+
+<definition name="minimumwage-list-menu" extends="menu">
+            <putList name="menu-items">
+                <item link="cms.action.minimumwage.refresh" icon="" value="" />
+                <item link="cms.action.edit" icon="" value="" />
+                
+            </putList>
+</definition>
+
+<definition name="minimumwage-menu" extends="menu">
+              <putList name="menu-items">
+		<item link="cms.action.refresh" icon="" value="" />
+		  <item link="cms.action.save" icon="" value="" /> 
+		  <item link="cms.action.return" icon="" value="" />
+
+          </putList>
+</definition>
+
+<definition name="workorder-list-menu" extends="menu">
+                    <putList name="menu-items">
+                        <item link="cms.action.refresh" icon="" value="" />
+                        <item link="cms.action.edit" icon="" value="" />
+                    </putList>
+
+</definition>
+
+   <definition name="workorder-menu" extends="menu">
+             <putList name="menu-items">
+		<item link="cms.action.refresh" icon="" value="" />
+		 <!-- <item link="cms.action.save" icon="" value="" /> -->
+		   <item link="cms.action.wk.return" icon="" value="" /> 
+		  <!--  <item link="cms.action.go.to.lr" icon="" value="" /> -->
+          </putList>
+</definition>
+
+<definition name="workmen-list-menu" extends="menu">
+                    <putList name="menu-items">
+                        <item link="cms.action.new" icon="" value="" />
+                        <item link="cms.action.edit" icon="" value="" /> 
+                        <item link="cms.action.refresh" icon="" value="" />
+                        <item link="cms.action.return" icon="" value="" />
+                    </putList>
+
+</definition>
+        <definition name="workmen-detail-menu" extends="menu">
+             <putList name="menu-items">
+		  <item link="cms.action.workmen.detail.refresh" icon="" value="" />
+		  <item link="cms.action.workmen.detail.save" icon="" value="return validate()" /> 
+		  <item link="cms.action.workmen.detail.return" icon="" value="" />
+
+          </putList>
+</definition>
+<definition name="terminate-workmen-detail-menu" extends="menu">
+          <putList name="menu-items">
+		  <item link="cms.action.terminate.workmen.detail.rehire" icon="" value="return validate()" />
+		  <item link="cms.action.terminate.workmen.detail.return" icon="" value="" /> 
+          </putList>
+</definition>
+<definition name="contract-workmen-list-menu" extends="menu">
+            <putList name="menu-items">
+                <item link="cms.action.refresh" icon="" value="" />
+                <item link="cms.action.edit" icon="" value="" />
+            </putList>
+</definition>
+  
+  <definition name="trade-menu" extends="menu">
+              <putList name="menu-items">
+                  <item link="cms.action.refresh" icon="" value="" />
+                  <item link="cms.action.save" icon="" value="" />
+              </putList>
+  </definition>
+ 
+ <definition name="list-menu" extends="menu">
+            <putList name="menu-items">
+            	<item link="cms.action.new" icon="" value="" />
+                <item link="cms.action.refresh" icon="" value="" />
+                <item link="cms.action.edit" icon="" value="" /> 
+            </putList>
+</definition>
+    
+       <definition name="detail-menu" extends="menu">
+                <putList name="menu-items">
+                    <item link="cms.action.refresh" icon="" value="" />
+                    <item link="cms.action.save" icon="" value="" /> 
+                    <item link="cms.action.return" icon="" value="" />
+                </putList>
+    </definition>
+        <definition name="department-list-menu" extends="menu">
+            <putList name="menu-items">
+                    <item link="cms.action.refresh" icon="" value="" />
+                    <item link="cms.action.edit" icon="" value="" />
+                </putList>
+        </definition>
+        
+             <definition name="department-detail-menu" extends="menu">
+                    <putList name="menu-items">
+                        <item link="cms.action.detail.refresh" icon="" value="" />
+                        <item link="cms.action.detail.edit" icon="" value="" /> 
+                        <item link="cms.action.detail.delete" icon="" value="" />
+                        <item link="cms.action.detail.return" icon="" value="" />
+                    </putList>
+        </definition>
+             <definition name="department-user-menu" extends="menu">
+                    <putList name="menu-items">
+                        <item link="cms.action.user.refresh" icon="" value="" />
+                        <item link="cms.action.user.save" icon="" value="" />
+                        <item link="cms.action.user.save.and.return" icon="" value="" />
+                        <item link="cms.action.user.return" icon="" value="" />
+                       
+                    </putList>
+        </definition>
+ 
+  <definition name = "cms-trade-application" extends = "basic-workspace">
+   	<put name="workspace-name" type="string" value="cms.app.name.trade.config.detail" />
+            <put name = "action-path" type = "string" value = "/trade" />
+   	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/trade.jsp" />
+   	   <put name = "resources" type = "string" value = "" />
+   	   <put name = "action-bar" type = "definition" value = "trade-action-bar" />
+   	   <put name="title-bar" type="definition" value="trade-title-bar" />
+   </definition>
+ 
+<definition name = "cms-contractor-list-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.contractorlist" />
+           <put name = "action-path" type = "string" value = "/contractorlist" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/ContractorList.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "list-action-bar" />
+  	   <put name="title-bar" type="definition" value="contractor-list-title-bar" />
+  </definition>
+
+
+<definition name = "cms-contractor-application" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.contractor" />
+           <put name = "action-path" type = "string" value = "/contractor" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/Contractor.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "contractor-action-bar" />
+  	   <put name="title-bar" type="definition" value="contractor-title-bar" />
+  </definition>
+
+<definition name="contractor-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="contractor-menu" />
+</definition>
+
+<definition name="contractor-menu" extends="menu">
+            <putList name="menu-items">
+            <item link="cms.action.refresh" icon="" value="" />
+            <item link="cms.action.save" icon="" value="return validate()" /> 
+            <item link="cms.action.return" icon="" value="" />
+            </putList>
+    </definition>
+    
+<definition name="contractorlist-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="contractorlist-menu" />
+</definition>
+
+<definition name="contractor-action-bar" extends="menu">
+            <putList name="menu-items">
+                <item link="cms.action.refresh" icon="" value="" />
+                <item link="cms.action.edit" icon="" value="" />
+				
+            </putList>
+</definition>
+ <definition name="trade-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="trade-menu" />
+</definition>
+
+<definition name="workorder-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.workorder.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="workorder-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.workorder.config.detail" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="workmen-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.workmen.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="cms-safety-training-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.safety.training.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="cms-safety-training-workmen-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.safety.training.workmen.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+
+<definition name="cms-safety-violation-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.safety.violation.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+<definition name="cms-safety-violation-workmen-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.safety.violation.workmen.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="cms-health-information-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.health.information.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+<definition name="cms-health-information-workmen-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.health.information.workmen.title" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+<definition name="principal-employer-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.principal.employer.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+<definition name="contractor-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.contractor.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+<definition name="contractor-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.contractor" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+ <definition name="principal-employer-detail-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.principal.employer.config.detail" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+     <definition name="department-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.department.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+
+    <definition name="department-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.department.config.detail" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+       <definition name="department-user-title-bar" extends="title-bar">
+                <put name="page-title-key" type="string" value="cms.app.name.department.user.detail" />
+                <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+                <put name="help-query-string-header" type="string" value="WPMHelp" />
+                <put name="help-target-frame" type="string" value="WWHFrame" />
+                <put name="help-main-page" type="string" value="wwhelp.htm" />
+                <put name="help-volume-name" type="string" value="WPMHelp" />
+                <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+                <put name="show-help-link" value="true" />
+                <put name="page-context-components" type="string" value="" />
+                <put name="common-header-links" type="string" value="" />
+                <put name="refresh-button" type="string" value="" />
+    </definition>
+ <definition name="workmen-detail-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.workmen.config.detail" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+ <definition name="contract-workmen-detail-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.contract.workmen.config.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+ <definition name="contract-workmen-list-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.contract.list" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+    <definition name="trade-title-bar" extends="title-bar">
+                <put name="page-title-key" type="string" value="cms.app.name.trade.config.list" />
+                <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+                <put name="help-query-string-header" type="string" value="WPMHelp" />
+                <put name="help-target-frame" type="string" value="WWHFrame" />
+                <put name="help-main-page" type="string" value="wwhelp.htm" />
+                <put name="help-volume-name" type="string" value="WPMHelp" />
+                <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+                <put name="show-help-link" value="true" />
+                <put name="page-context-components" type="string" value="" />
+                <put name="common-header-links" type="string" value="" />
+                <put name="refresh-button" type="string" value="" />
+        </definition>
+ <definition name="minimum-wage-list-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.minimumwagelist.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+     </definition>
+     
+<definition name="minimum-wage-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.minimumwagelist.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+     </definition>
+ 
+<definition name="laborreqList-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.laborreqlist.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+     </definition>
+<definition name="laborreq-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.laborreq.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="view-laborreq-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.view.laborreq.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="view-laborreqhistory-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.view.laborreqhistory.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="laborreqSchedule-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.laborreqSchedule.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="laborreqTimecard-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.laborreqSchedule.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="laborreqbulk-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.laborreqbulk.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name="bulk-sched-title-bar" extends="title-bar">
+             <put name="page-title-key" type="string" value="cms.app.name.bulksched.config.list" />
+             <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+             <put name="help-query-string-header" type="string" value="WPMHelp" />
+             <put name="help-target-frame" type="string" value="WWHFrame" />
+             <put name="help-main-page" type="string" value="wwhelp.htm" />
+             <put name="help-volume-name" type="string" value="WPMHelp" />
+             <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+             <put name="show-help-link" value="true" />
+             <put name="page-context-components" type="string" value="" />
+             <put name="common-header-links" type="string" value="" />
+             <put name="refresh-button" type="string" value="" />
+</definition>
+
+<definition name = "cms-workmen-view-schedule" extends = "basic-workspace">
+  	<put name="workspace-name" type="string" value="cms.app.name.workmen.schedule.config.detail" />
+           <put name = "action-path" type = "string" value = "/scheduleWorkmen" />
+  	   <put name = "workspace" type = "page" value = "/applications/cms/html/jsp/scheduleWorkmen.jsp" />
+  	   <put name = "resources" type = "string" value = "" />
+  	   <put name = "action-bar" type = "definition" value = "workmen-schedule-action-bar" />
+  	   <put name="title-bar" type="definition" value="workmen-title-bar" />
+</definition>
+<definition name="workmen-schedule-action-bar" extends="action-bar">
+        <put name="app-menu" type="definition" value="workmen-schedule-menu" />
+</definition>
+<definition name="workmen-schedule-menu" extends="menu">
+          <putList name="menu-items">
+<!-- 		  <item link="cms.action.workmenschedule.return" icon="" value="" /> -->
+          </putList>
+</definition>
+<definition name="workmen-title-bar" extends="title-bar">
+            <put name="page-title-key" type="string" value="cms.app.name.workmen.schedule.config.detail" />
+            <put name="help-main-html-page" type="string" value="wwhelp/wwhimpl/js/html/wwhelp.htm" />
+            <put name="help-query-string-header" type="string" value="WPMHelp" />
+            <put name="help-target-frame" type="string" value="WWHFrame" />
+            <put name="help-main-page" type="string" value="wwhelp.htm" />
+            <put name="help-volume-name" type="string" value="WPMHelp" />
+            <put name="help-topic" type="string" value="wpm_web_service_task_list" />
+            <put name="show-help-link" value="true" />
+            <put name="page-context-components" type="string" value="" />
+            <put name="common-header-links" type="string" value="" />
+            <put name="refresh-button" type="string" value="" />
+    </definition>
+</tiles-definitions>
+

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+        <form-beans>
+        <form-bean name = "dataForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>	
+	<form-bean name = "listForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+        <form-bean name = "contractorForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "contractorlistForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "contractorunitForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "departmentListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "departmentForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "departmentUserForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "contractWListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "workmenDetailForm" type = "com.kronos.wfc.cms.facade.ImportActionForm"/>
+       	<form-bean name = "workmenListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "tradeForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "workorderListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+       	<form-bean name = "workorderForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "minimumwagelistForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "minimumwageForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "laborReqListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "laborReqForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "viewLaborReqForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "laborReqScheduleForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "lrbulkForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "schedForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "lrbulkScheduleForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "viewlrHistoryForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "uploadForm" type = "com.kronos.wfc.cms.facade.ImportActionForm"/>
+	<form-bean name = "safetyTrainingForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "safetyViolationForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "healthInformationForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "healthInformationWorkmenListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "safetyWorkmenListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "safetyViolationWorkmenListForm" type = "com.kronos.wfc.platform.struts.framework.DynamicMapBackedForm"/>
+	<form-bean name = "terminateWorkmenDetailForm" type = "com.kronos.wfc.cms.facade.ImportActionForm"/>
+	</form-beans>
+        
+
+        <!-- Global Exceptions -->
+        <global-forwards>
+        <forward name="doCMSPrincipalApplication" path="/show.do" />
+		<forward name="doCMSPrincipalListApplication" path="/list.do" />
+		<forward name="CMSPrincipalEmployeeListApplication" path="cms-principal-list-application" />
+		<forward name="doCMSDepartmentApplication" path="/department.do" />
+		<forward name="doCMSDepartmentListApplication" path="/dlist.do" />
+		<forward name="CMSDepartmentListApplication" path="cms-department-list-application" />
+		<forward name="CMSDepartmentUserApplication" path="/departmentUser.do" />
+		<forward name="doCMSContractor" path="/contractor.do" />
+		<forward name="doCMSContractorlist" path="/contractorlist.do" />
+		<forward name="doCMSContractorunit" path="/contractorunit.do" />
+		<forward name="doCMSWorkmenDetailApplication" path="/workmenDetail.do" />
+		<forward name="doCMSWorkmenListApplication" path="/workmenList.do" />
+		<forward name="doCMSContractorWListApplication" path="/contractWList.do" />
+		<forward name="doCMSTrade" path="/trade.do" />
+		<forward name="doWorkOrderList" path="/workorderList.do" />
+		<forward name="doWorkOrder" path="/workorder.do" />
+		<forward name="CMSMinimumWageListApplication" path="cms-minimum-wage-list-application" /> 
+		<forward name="doCMSMinimumwagelist" path="/minimumwagelist.do" />
+		<forward name="doCMSMinimumwage" path="/minimumwage.do" />
+		<forward name="doCMSLaborReqList" path="/laborreqList.do" />
+		<forward name="doCMSLaborReq" path="/laborreq.do" />
+		<forward name="doCMSLRSchedule" path="/laborreqSchedule.do" />
+		<forward name="doCMSLRApproval" path="/laborreqbulk.do" />
+		<forward name="doCMSAttendanceApproval" path="/laborreqTimecard.do" />
+		<forward name="doGoToScheduleEditor" path="/laborScheduleEditor.do" />
+		<forward name="doCMSBulkSchedule" path="/lrbulkSched.do" />
+		<forward name="doViewLR" path="/lrView.do" />
+		<forward name="doViewLRHistory" path="/lrViewHistory.do" />
+		<forward name="doCMSSafetyTraining" path="/safetyTraining.do" />
+		<forward name="doCMSSafetyViolation" path="/safetyViolation.do" />
+		<forward name="doCMSHealthInformation" path="/healthInformation.do" />
+		<forward name="doCMSHealthInformationWorkmenList" path="/healthInformationWorkmenList.do" />
+		<forward name="doCMSSafetyWorkmenList" path="/safetyWorkmenList.do" />
+		<forward name="doCMSSafetyViolationWorkmenList" path="/safetyViolationWorkmenList.do" />
+		<forward name="doTerminateWorkmenDetail" path="/terminateWorkmenDetail.do" />
+    </global-forwards>         
+	    
+       <!-- Actions -->
+       
+              <action-mappings>
+
+	    <action 
+		       name = "terminateWorkmenDetailForm"  
+		       path = "/terminateWorkmenDetail"  
+		       type = "com.kronos.wfc.cms.facade.TerminateWorkmenDetailAction" 
+		       scope = "request" 
+		       unknown = "false"  
+		       parameter = "formAction">
+		       <forward name="success" path="cms-terminate-workmen-application"/>
+	    </action>
+              
+	    <action 
+		       name = "uploadForm"  
+		       path = "/uploadform"  
+		       type = "com.kronos.wfc.cms.facade.ImportActionHandler" 
+		       scope = "request" 
+		       unknown = "false"  
+		       parameter = "formAction">
+		       <forward name="success" path="cms-import-view-application"/>
+	    </action>
+
+	    <action 
+		       name = "lrbulkScheduleForm"  
+		       path = "/lrbulkSched"  
+		       type = "com.kronos.wfc.cms.facade.LRBulkScheduleAction" 
+		       scope = "request" 
+		       unknown = "false"  
+		       parameter = "formAction">
+		       <forward name="success" path="cms-lrBulkSched-list-application"/>
+	    </action>
+ 
+               <action 
+       		       name = "laborReqListForm"  
+       		       path = "/laborreqList"  
+       		       type = "com.kronos.wfc.cms.facade.LaborRequisitionListAction" 
+       		       scope = "request" 
+       		       unknown = "false"  
+       		       parameter = "formAction">
+       		       <forward name="success" path="cms-laborreq-list-application"/>
+       	    </action>
+                     <action 
+       		       name = "laborReqForm"  
+       		       path = "/laborreq"  
+       		       type = "com.kronos.wfc.cms.facade.LaborRequisitionAction" 
+       		       scope = "request" 
+       		       unknown = "false"  
+       		       parameter = "formAction">
+       		       <forward name="success" path="cms-laborreq-application"/>
+       	    </action>
+       	    <action 
+		       name = "viewLaborReqForm"  
+		       path = "/lrView"  
+		       type = "com.kronos.wfc.cms.facade.ViewLaborRequisitionAction" 
+		       scope = "request" 
+		       unknown = "false"  
+		       parameter = "formAction">
+		       <forward name="success" path="cms-viewlaborreq-application"/>
+	   </action>
+	         	    <action 
+	   		       name = "viewlrHistoryForm"  
+	   		       path = "/lrViewHistory"  
+	   		       type = "com.kronos.wfc.cms.facade.ViewLRHistoryAction" 
+	   		       scope = "request" 
+	   		       unknown = "false"  
+	   		       parameter = "formAction">
+	   		       <forward name="success" path="cms-viewlaborreqhist-application"/>
+	   	   </action>
+ 
+     	    <action 
+       		       name = "laborReqScheduleForm"  
+       		       path = "/laborreqSchedule"  
+       		       type = "com.kronos.wfc.cms.facade.LabourReqScheduleAction" 
+       		       scope = "request" 
+       		       unknown = "false"  
+       		       parameter = "formAction">
+       		       <forward name="success" path="cms-laborreq-schedule-application"/>
+       	    </action>
+       	    <action 
+	           		       name = "laborReqTimecardForm"  
+	           		       path = "/laborreqTimecard"  
+	           		       type = "com.kronos.wfc.cms.facade.LabourReqTimecardAction" 
+	           		       scope = "request" 
+	           		       unknown = "false"  
+	           		       parameter = "formAction">
+	           		       <forward name="success" path="cms-laborreq-timecard-application"/>
+	           	    </action>
+
+      	     <action 
+       		       name = "lrbulkForm"  
+       		       path = "/laborreqbulk"  
+       		       type = "com.kronos.wfc.cms.facade.LRBulkAction" 
+       		       scope = "request" 
+       		       unknown = "false"  
+       		       parameter = "formAction">
+       		       <forward name="success" path="cms-laborreqbulk-application"/>
+       	    </action>
+ 
+              <action 
+		       name = "minimumwageForm"  
+		       path = "/minimumwage"  
+		       type = "com.kronos.wfc.cms.facade.MinimumWageAction" 
+		       scope = "request" 
+		       unknown = "false"  
+		       parameter = "formAction">
+		       <forward name="success" path="cms-minimum-wage-application"/>
+	    </action>
+         	 <action 
+	                               name = "minimumwagelistForm"  
+	                               path = "/minimumwagelist"  
+	                               type = "com.kronos.wfc.cms.facade.MinimumWageListAction" 
+	                               scope = "request" 
+	                               unknown = "false"  
+	                               parameter = "formAction">
+	                               <forward name="success" path="cms-minimum-wage-list-application"/>
+	                </action>
+ 
+                <action 
+                        name = "dataForm"  
+                        path = "/show"  
+                        type = "com.kronos.wfc.cms.facade.PrincipalEmployeeAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-principal-application"/>
+                </action>
+		 <action 
+                        name = "workorderListForm"  
+                        path = "/workorderList"  
+                        type = "com.kronos.wfc.cms.facade.WorkOrderListAction" 
+                        scope = "request" 
+                        unknown = "false"  
+						parameter = "formAction">
+						<forward name="success" path="cms-workorder-list-application"/>
+        </action>
+
+		<action 
+                        name = "workorderForm"  
+                        path = "/workorder"  
+                        type = "com.kronos.wfc.cms.facade.WorkOrderAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-workorder-application"/>
+                </action>
+
+		 <action 
+                        name = "contractorForm"  
+                        path = "/contractor"  
+                        type = "com.kronos.wfc.cms.facade.ContractorAction" 
+                        scope = "request" 
+                        unknown = "false"  
+				parameter = "formAction">
+
+                        <forward name="success" path="cms-contractor-application"/>
+                </action>
+
+		<action 
+                        name = "listForm"  
+                        path = "/list"  
+                        type = "com.kronos.wfc.cms.facade.PrincipalEmployeeListAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-principal-list-application"/>
+                </action>
+                
+	  	 <action 
+			name = "departmentForm"  
+			path = "/department"  
+			type = "com.kronos.wfc.cms.facade.DepartmentAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-department-application"/>
+		</action>
+	   	<action 
+			name = "departmentUserForm"  
+			path = "/departmentUser"  
+			type = "com.kronos.wfc.cms.facade.DepartmentUserAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-user-application"/>
+		</action>
+
+		<action 
+			name = "departmentListForm"  
+			path = "/dlist"  
+			type = "com.kronos.wfc.cms.facade.DepartmentListAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-department-list-application"/>
+			</action>
+	  	 <action 
+			name = "workmenListForm"  
+			path = "/workmenList"  
+			type = "com.kronos.wfc.cms.facade.WorkmenListAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-workmen-list-application"/>
+		</action>
+	   	<action 
+			name = "workmenDetailForm"  
+			path = "/workmenDetail"  
+			type = "com.kronos.wfc.cms.facade.WorkmenDetailAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-workmen-detail-application"/>
+		</action>
+
+		<action 
+			name = "contractWListForm"  
+			path = "/contractWList"  
+			type = "com.kronos.wfc.cms.facade.ContractorWListAction" 
+			scope = "request" 
+			unknown = "false"  
+			parameter = "formAction">
+			<forward name="success" path="cms-cw-list-application"/>
+		</action>
+
+		<action 
+                        name = "contractorlistForm"  
+                        path = "/contractorlist"  
+                        type = "com.kronos.wfc.cms.facade.ContractorListAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-contractor-list-application"/>
+                </action>
+		<action 
+                        name = "contractorunitForm"  
+                        path = "/contractorunit"  
+                        type = "com.kronos.wfc.cms.facade.ContractorUnitAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-contractor-unit-application"/>
+                </action>
+		 <action 
+                        name = "tradeForm"  
+                        path = "/trade"  
+                        type = "com.kronos.wfc.cms.facade.TradeAction" 
+                        scope = "request" 
+                        unknown = "false"  
+                        parameter = "formAction">
+                        <forward name="success" path="cms-trade-application"/>
+                </action>
+                      <action 
+              		       name = "schedForm"  
+              		       path = "/laborScheduleEditor"  
+              		       type = "com.kronos.wfc.cms.facade.ScheduleForwardAction" 
+              		       scope = "request" 
+              		       unknown = "false"  
+              		       parameter = "formAction">
+              		       <forward name="success" path="cms-forward-schedule"/>
+              	    </action>
+
+                     <action 
+              		       name = "safetyTrainingForm"  
+              		       path = "/safetyTraining"  
+              		       type = "com.kronos.wfc.cms.facade.SafetyTrainingAction" 
+              		       scope = "request" 
+              		       validate="true"
+              		       unknown = "false"  
+              		       parameter = "formAction">
+              		       <forward name="success" path="cms-safety-training"/>
+              	    </action>
+                    <action 
+              		       name = "safetyViolationForm"  
+              		       path = "/safetyViolation"  
+              		       type = "com.kronos.wfc.cms.facade.SafetyViolationAction" 
+              		       scope = "request" 
+              		       unknown = "false"  
+              		       parameter = "formAction">
+              		       <forward name="success" path="cms-safety-violation"/>
+              	    </action>
+                    <action 
+              		       name = "healthInformationForm"  
+              		       path = "/healthInformation"  
+              		       type = "com.kronos.wfc.cms.facade.HealthInformationAction" 
+              		       scope = "request" 
+              		       unknown = "false"  
+              		       parameter = "formAction">
+              		       <forward name="success" path="cms-health-information"/>
+              	    </action>
+              	     <action 
+		           		       name = "safetyWorkmenListForm"  
+		           		       path = "/safetyWorkmenList"  
+		           		       type = "com.kronos.wfc.cms.facade.SafetyWorkmenListAction" 
+		           		       scope = "request" 
+		           		       unknown = "false"  
+		           		       parameter = "formAction">
+		           		       <forward name="success" path="cms-safety-workmen-list-application"/>
+		     </action>
+              	     <action 
+		           		       name = "safetyViolationWorkmenListForm"  
+		           		       path = "/safetyViolationWorkmenList"  
+		           		       type = "com.kronos.wfc.cms.facade.SafetyViolationWorkmenListAction" 
+		           		       scope = "request" 
+		           		       unknown = "false"  
+		           		       parameter = "formAction">
+		           		       <forward name="success" path="cms-safety-violation-workmen-list-application"/>
+		     </action>
+
+              	     <action 
+		           		       name = "healthInformationWorkmenListForm"  
+		           		       path = "/healthInformationWorkmenList"  
+		           		       type = "com.kronos.wfc.cms.facade.HealthInformationWorkmenListAction" 
+		           		       scope = "request" 
+		           		       unknown = "false"  
+		           		       parameter = "formAction">
+		           		       <forward name="success" path="cms-health-information-workmen-list-application"/>
+		     </action>
+
+          </action-mappings>
+
+        <!-- Message Resources-->
+        <message-resources 
+	        factory = "com.kronos.wfc.platform.struts.framework.PropertyWithNamedParamsResourcesFactory"
+	        parameter = "cms_strings"
+        	null = "false" />
+ 
+        <plug-in className = "org.apache.struts.tiles.TilesPlugin">
+                <set-property property = "definitions-config"  
+                        value = "/applications/wpk/resources/v3-struts-tiles.xml,/applications/cms/properties/tiles-config.xml" />
+
+                <set-property property = "moduleAware"  value = "true" />
+        </plug-in>
+      <!--plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/applications/cms/properties/validator-rules.xml,/applications/cms/properties/validation.xml"/>
+      </plug-in-->
+</struts-config>
